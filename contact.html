@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="hr">
+  <head>
+      <title>Contact</title>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <meta name="description" content="">
+      <meta name="keywords" content="">
+      <meta name="author" content="Danijel Karamatić">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    figure {
+      padding: 0.5em;
+      margin: 0 1em 0.5em 1em;
+      float: left;
+      width: 25%;
+    }
+    p{
+      margin: 1em;
+      line-height: 1.3em;
+      letter-spacing: .5px;
+    }
+    .fot{
+      background-color: #e04700;
+      border-radius: 5px;
+      overflow: hidden;
+      text-align: center;
+      color: black;
+      padding: 10px 15px;
+    }
+    .soc{
+      margin-left: 13px;
+    }
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    input{
+        width: 250px;
+        height: 25px;
+        margin-bottom: 25px;
+    }
+  </style>
+  <a href="images/reddit.png" target="_blank"><img src="images/reddit.png"  height="250" alt="logo" title="Reddit"></a>
+  </head>
+  <body>
+      <nav>
+        <ul class="topbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+      <main>
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d159047.20637617668!2d-0.07314445170345467!3d51.474447447002134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487605fbf9af6a13%3A0x90555f2ce0db38b9!2sGrad%20Offer!5e0!3m2!1shr!2shr!4v1639153010989!5m2!1shr!2shr" width="100%" height="400" style="border:0;" allowfullscreen loading="lazy"></iframe>        
+          <form action="forma.php" id="contact_form" name="contact_form" method="POST">
+            <label for="fname">First Name*</label><br/>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..." required><br/>
+            <label for="lname">Last Name*</label><br/>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..." required><br/>
+            <label for="email">Your E-mail*</label><br/>
+            <input type="email" id="email" name="email" placeholder="Your e-mail..." required><br/>
+            <label for="country">Country</label><br/>
+            <select id="country" name="country">
+              <option value="">Please select</option>
+              <option value="HR">Croatia</option>
+              <option value="EN" selected>England</option>
+              <option value="FR">France</option>
+              <option value="ES">Spain</option>
+              <option value="US">USA</option>
+            </select><br/>
+            <label for="interest">Your interests</label><br/>
+            <textarea id="interest" name="interest" placeholder="Write your interests..." style="width: 250px; height: 100px;"></textarea><br/>
+            <input type="submit" value="Submit" name="Submit">
+            <input type="reset" value="Reset">
+          </form>
+        </div>
+      </main>
+    </body>
+  <footer>
+    <div>
+      <h3 style="font-size: 13px; margin-left: 15px;">Social media:</h3>
+      <div class="soc">
+        <a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="flogo" title="Facebook"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="ilogo" title="Instagram"></a>
+        <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="tlogo" title="Twitter"></a>
+        <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.png" alt="llogo" title="Linkedin"></a>
+      </div>
+    </div>
+    <div class="fot">
+      Copyright &copy; 2021 Danijel Karamatić.<a href="https://github.com/Dkarama8/WEB" target="_blank"><img src="images/github.png" alt="Github1" title="Github"></a>
+    </div>
+  </footer>
+</html>
